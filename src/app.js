@@ -2,7 +2,7 @@ const { Client, GatewayIntentBits, ActivityType, Events } = require('discord.js'
 const fs = require("fs")
 
 const config = require("./config");
-const reactToRolesMentioned = require('/events/reactToMentionedRole');
+const reactToRolesMentioned = require('./events/reactToMentionedRole');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions] })
 
